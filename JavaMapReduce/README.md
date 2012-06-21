@@ -5,8 +5,8 @@ This shows a basic Java Map Reduce operating over a set of flight delay informat
 
 Build Instructions
 ===================
-mvn package
+	mvn package
 
 Execution Instructions
 ===================
-hadoop jar airlineCount-1.0-SNAPSHOT.jar com.microsoft.hadoop.samples.AirlineCounter input_flights flight_output
+	hadoop jar airlineCount-1.0-SNAPSHOT.jar com.microsoft.hadoop.samples.AirlineCounter input_flights flight_output
