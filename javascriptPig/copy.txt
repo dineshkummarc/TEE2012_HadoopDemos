@@ -1,0 +1,1 @@
+pig.from('asv://airlinedata/*','arrDelayMinutes:int, carrier, dayOfMonth, depDelayMinutes, dest, flightDate, month, origin, rowId, year',',').orderBy('arrDelayMinutes desc').take(10).to('top10delayedArrivals');
