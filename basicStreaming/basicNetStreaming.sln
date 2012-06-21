@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateAirlineKeyMapper", "GenerateAirlineKeyMapper\GenerateAirlineKeyMapper.csproj", "{63C8F66E-E7DD-4AF7-A27A-A8EBD1A55899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineFlightCountReducer", "AirlineFlightCountReducer\AirlineFlightCountReducer.csproj", "{48F8410F-CE6F-4FE1-ACC2-32E50989FC7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48F8410F-CE6F-4FE1-ACC2-32E50989FC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F8410F-CE6F-4FE1-ACC2-32E50989FC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F8410F-CE6F-4FE1-ACC2-32E50989FC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F8410F-CE6F-4FE1-ACC2-32E50989FC7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C8F66E-E7DD-4AF7-A27A-A8EBD1A55899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C8F66E-E7DD-4AF7-A27A-A8EBD1A55899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C8F66E-E7DD-4AF7-A27A-A8EBD1A55899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C8F66E-E7DD-4AF7-A27A-A8EBD1A55899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B6E37EF-35FD-42FB-9EB7-CF7357EED120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6E37EF-35FD-42FB-9EB7-CF7357EED120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6E37EF-35FD-42FB-9EB7-CF7357EED120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6E37EF-35FD-42FB-9EB7-CF7357EED120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99600625-2018-458D-A19F-617815BF8CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99600625-2018-458D-A19F-617815BF8CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99600625-2018-458D-A19F-617815BF8CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99600625-2018-458D-A19F-617815BF8CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
