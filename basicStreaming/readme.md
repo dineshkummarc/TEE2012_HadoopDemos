@@ -3,8 +3,6 @@ Basic Streaming
 
 This is a sample of basic map reduce based streaming using the streaming jar.
 
-Streaming i
-
 Build Instructions
 ======================
 Build projects in VS
