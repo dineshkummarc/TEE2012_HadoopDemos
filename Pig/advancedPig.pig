@@ -1,0 +1,3 @@
+-- more advanced case
+-- read data, generate the worst 3 flights for the top 10 worst performing airports
+-- see Chapter 7 ish of programming Pig by Alan White
