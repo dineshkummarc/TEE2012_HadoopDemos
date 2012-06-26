@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4f21195e-88e0-4ab1-8dc9-435cf0c43d7c</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AirlineCounterFSharp</RootNamespace>
+    <AssemblyName>AirlineCounterFSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Name>AirlineCounterFSharp</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Debug\AirlineCounterFSharp.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Release\AirlineCounterFSharp.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')" />
+  <ItemGroup>
+    <Compile Include="FlightMapper.fs" />
+    <Compile Include="FlightReducer.fs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSDN.Hadoop.Combiner">
+      <HintPath>..\packages\Microsoft.Hadoop.MapReduce.0.0.2\lib\net40\MSDN.Hadoop.Combiner.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSDN.Hadoop.Core">
+      <HintPath>..\packages\Microsoft.Hadoop.MapReduce.0.0.2\lib\net40\MSDN.Hadoop.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSDN.Hadoop.MapperBinary">
+      <HintPath>..\packages\Microsoft.Hadoop.MapReduce.0.0.2\lib\net40\MSDN.Hadoop.MapperBinary.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSDN.Hadoop.MapperText">
+      <HintPath>..\packages\Microsoft.Hadoop.MapReduce.0.0.2\lib\net40\MSDN.Hadoop.MapperText.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSDN.Hadoop.MapperXml">
+      <HintPath>..\packages\Microsoft.Hadoop.MapReduce.0.0.2\lib\net40\MSDN.Hadoop.MapperXml.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSDN.Hadoop.MapReduceBase">
+      <HintPath>..\packages\Microsoft.Hadoop.MapReduce.0.0.2\lib\net40\MSDN.Hadoop.MapReduceBase.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSDN.Hadoop.Reducer">
+      <HintPath>..\packages\Microsoft.Hadoop.MapReduce.0.0.2\lib\net40\MSDN.Hadoop.Reducer.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSDN.Hadoop.Submission.Api">
+      <HintPath>..\packages\Microsoft.Hadoop.MapReduce.0.0.2\lib\net40\MSDN.Hadoop.Submission.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MSDN.Hadoop.Submission.Console">
+      <HintPath>..\packages\Microsoft.Hadoop.MapReduce.0.0.2\lib\net40\MSDN.Hadoop.Submission.Console.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
